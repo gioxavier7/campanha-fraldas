@@ -41,24 +41,110 @@ header nav a{
     text-decoration: none;
 }
 
-.header-nav a:hover{
-    color: black;
+
+.header-nav a:focus,
+button:hover {
+  color: black;
+}
+
+.header-nav a:focus:after,
+.header-nav a:hover:after {
+  width: 100%;
+  left: 0%;
 }
 
 .header-nav a:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform: scaleX(0);
-    transition: transform 0.25s ease-out;
-    transform-origin: bottom right;
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 
-.header-nav a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left; 
+main{
+    padding-top: 100px;
+}
+
+.grupo {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.conteudo {
+    max-width: 40%;
+    padding-left: 20px;
+}
+
+.conteudo h1 {
+    font-size: 62px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.conteudo p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+img {
+    max-width: 50%;
+}
+
+.botao-sobre {
+    display: inline-block;
+    padding: 1.2em 2.5em;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.botao-sobre a {
+    color: black;
+    text-decoration: none;
+}
+
+.botao-sobre:hover {
+    background-color: #5B99C2;
+}
+
+.botao-doe {
+    display: inline-block;
+    padding: 1.2em 2.5em;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.botao-doe a {
+    color: black;
+    text-decoration: none;
+}
+
+.botao-doe:hover{
+    background-color: #EDBB72;
 }
