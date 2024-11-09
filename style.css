@@ -167,51 +167,8 @@ img {
 
 
 /* tela vale fralda */
-#vale-fralda {
-    background-color: #7AB2D3;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-}
 
-#vale-fralda .conteudo {
-    max-width: 40%;
-    padding-left: 20px;
+#vale-fralda .img{
+    position: relative;
+    margin-left: 200px;
 }
-
-#vale-fralda .conteudo h1 {
-    font-size: 48px;
-    color: black;
-    margin-bottom: 10px;
-}
-
-#vale-fralda .conteudo p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #333;
-}
-
-#vale-fralda .pix {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 20%;
-    text-align: center;
-}
-
-#vale-fralda .pix img {
-    max-width: 100%;
-    margin-bottom: 10px;
-}
-
-#vale-fralda .pix p {
-    font-size: 0.9rem;
-    color: #333;
-}
-
-#vale-fralda .img img {
-    max-width: 50%;
-    align-self: flex-end;
-}
-
