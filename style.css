@@ -21,6 +21,7 @@ body{
 
 header{
     background-color: transparent;
+    backdrop-filter: blur(2px);
     padding: 16px;
     position: fixed;
     width: 100vw;
