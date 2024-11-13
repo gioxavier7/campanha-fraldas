@@ -172,3 +172,25 @@ img {
     position: relative;
     margin-left: 200px;
 }
+
+/* Estilo geral do rodapé */
+.footer {
+    background-color: #5B99C2;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo da seção de texto */
+.footer-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Estilo da imagem do SENAI */
+.footer-logo img {
+    width: 600px;
+}
